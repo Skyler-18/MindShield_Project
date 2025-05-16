@@ -2,8 +2,6 @@
 
 A machine learning application that analyzes social media posts to detect signs of depression/suicide risk using Logistic Regression and XGBoost models.
 
-![App Screenshot](https://via.placeholder.com/800x400?text=Mental+Health+Analyzer+Screenshot)
-
 ## Features ✨
 
 - **Text Analysis**: Processes social media posts to detect risk indicators
@@ -24,8 +22,8 @@ A machine learning application that analyzes social media posts to detect signs 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/mental-health-analyzer.git
-   cd mental-health-analyzer
+   git clone https://github.com/Skyler-18/MindShield_Project.git
+   cd MindShield_Project
    ```
 
 2. **Install dependencies**:
