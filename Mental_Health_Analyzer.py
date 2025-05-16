@@ -219,6 +219,6 @@ if __name__ == '__main__':
     if not MODEL_FILES_EXIST and not st.runtime.exists():
         print("Training models first...")
         train_models()
-        print("Now run: streamlit run Code2.py")
+        print("Now run: streamlit run Mental_Health_Analyzer.py")
     else:
         create_app()
