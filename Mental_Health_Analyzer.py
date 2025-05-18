@@ -21,6 +21,7 @@ import joblib
 import streamlit as st
 from wordcloud import WordCloud
 import os
+import gdown
 
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -42,8 +43,12 @@ def train_models():
     print("Starting model training...")
     
     # Load data
-    df = pd.read_csv('Suicide_Detection.csv')
-    print(f"Dataset shape: {df.shape}")
+    try:
+        df = pd.read_csv('Suicide_Detection.csv')
+    except FileNotFoundError:
+        gdown.download('https://drive.google.com/file/d/1YI77p_T0eAJQ2XFvtKDnWjIyIYzVWbKb/view?usp=sharing', 'Suicide_Detection.csv')
+        df = pd.read_csv('Suicide_Detection.csv')   
+
 
     # EDA Visualizations
     plt.figure(figsize=(6, 4))
