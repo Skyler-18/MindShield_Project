@@ -32,7 +32,8 @@ MODEL_FILES_EXIST = all([
     os.path.exists('xgb_model.pkl'),
     os.path.exists('tfidf.pkl'),
     os.path.exists('class_dist.png'),
-    os.path.exists('shap_summary.png')
+    os.path.exists('shap_summary.png'),
+    os.path.exists('text_length.png')
 ])
 
 # ======================
@@ -40,6 +41,10 @@ MODEL_FILES_EXIST = all([
 # ======================
 def train_models():
     """Run all training and setup steps"""
+    if MODEL_FILES_EXIST:
+        print("Model files already exist. Skipping training.")
+        return
+    
     print("Starting model training...")
     
     # Load data
