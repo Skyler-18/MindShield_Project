@@ -189,11 +189,11 @@ def create_app():
                 
                 with tab1:
                     st.image('class_dist.png')
-                    st.image('wordcloud_Depression Posts.png')
+                    st.image('wordcloud_Depressed Posts.png')
                     
                 with tab2:
                     st.image('text_length.png')
-                    st.image('wordcloud_Non-Depression Posts.png')
+                    st.image('wordcloud_Non-Depressed Posts.png')
                     
                 with tab3:
                     st.image('shap_summary.png')
