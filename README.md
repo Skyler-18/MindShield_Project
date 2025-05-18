@@ -17,6 +17,12 @@ A machine learning application that analyzes social media posts to detect signs 
 - Streamlit
 - SHAP
 - NLTK
+- gdown
+
+## Live Demo 🌐
+
+Try the app now:  
+🔗 **[https://skyler-18-mindshield-project-mental-health-analyzer-uiwplf.streamlit.app/](https://skyler-18-mindshield-project-mental-health-analyzer-uiwplf.streamlit.app/)**
 
 ## Installation ⚙️
 
